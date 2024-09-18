@@ -43,6 +43,7 @@ class TestSpec:
     arch: str
     FAIL_TO_PASS: list[str]
     PASS_TO_PASS: list[str]
+    test_cmd: str
 
     @property
     def setup_env_script(self):
@@ -265,6 +266,7 @@ def make_test_spec(instance: SWEbenchInstance) -> TestSpec:
     problem_statement = instance["problem_statement"]
     hints_text = instance["hints_text"]  # Unused
     test_patch = instance["test_patch"]
+    test_cmd = MAP_REPO_VERSION_TO_SPECS[instance["repo"]][instance["version"]]["test_cmd"]
 
     def _from_json_or_obj(key: str) -> Any:
         """If key points to string, load with json"""
@@ -300,4 +302,5 @@ def make_test_spec(instance: SWEbenchInstance) -> TestSpec:
         arch=arch,
         FAIL_TO_PASS=fail_to_pass,
         PASS_TO_PASS=pass_to_pass,
+        test_cmd=test_cmd
     )

@@ -1,4 +1,5 @@
 from __future__ import annotations
+from dataclasses import asdict, fields
 
 import docker
 import json
@@ -521,13 +522,39 @@ def main(
     predictions = {pred[KEY_INSTANCE_ID]: pred for pred in predictions}
 
     # get dataset from predictions
-    dataset = get_dataset_from_preds(dataset_name, split, instance_ids, predictions, run_id)
+    dataset = get_dataset_from_preds(dataset_name, split, instance_ids, predictions, run_id, False)
     full_dataset = load_swebench_dataset(dataset_name, split, instance_ids)
     existing_images = list_images(client)
     print(f"Running {len(dataset)} unevaluated instances...")
     if not dataset:
         print("No instances to run.")
     else:
+        test_specs = list(map(make_test_spec, dataset))
+
+        class DataclassEncoder(json.JSONEncoder):
+            def default(self, obj):
+                if isinstance(obj, TestSpec):
+                    # Define which fields and properties to include
+                    included_fields = {'instance_id', "test_cmd"}
+                    included_properties = {'env_image_key'}
+                    # Filter and create dictionary of fields
+                    result = {
+                        field.name: getattr(obj, field.name) 
+                        for field in fields(obj) 
+                        if field.name in included_fields
+                    }
+                    # Add selected properties
+                    for prop in included_properties:
+                        result[prop] = getattr(obj, prop)
+
+                    result["install_cmd"] = " && ".join(obj.repo_script_list[5::])
+                    return result
+                
+                return super().default(obj)
+            
+        with open('test_specs.json', 'w') as f:
+            json.dump(test_specs, f, cls=DataclassEncoder, indent=2)
+        return
         # build environment images + run instances
         build_env_images(client, dataset, force_rebuild, max_workers)
         run_instances(predictions, dataset, cache_level, clean, force_rebuild, max_workers, run_id, timeout)
