@@ -1,0 +1,2102 @@
+{
+  "astropy__astropy-12907": {
+    "instance_id": "astropy__astropy-12907",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.428468730904ff6b4232aa:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/requires = \\[\"setuptools\",/requires = \\[\"setuptools==68.0.0\",/' pyproject.toml && python -m pip install -e .[test] --verbose",
+    "test_cmd_with_directives": "pytest -rA astropy/modeling/tests/test_separable.py"
+  },
+  "astropy__astropy-14182": {
+    "instance_id": "astropy__astropy-14182",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.428468730904ff6b4232aa:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/requires = \\[\"setuptools\",/requires = \\[\"setuptools==68.0.0\",/' pyproject.toml && python -m pip install -e .[test] --verbose",
+    "test_cmd_with_directives": "pytest -rA astropy/io/ascii/tests/test_rst.py"
+  },
+  "astropy__astropy-14365": {
+    "instance_id": "astropy__astropy-14365",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.428468730904ff6b4232aa:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/requires = \\[\"setuptools\",/requires = \\[\"setuptools==68.0.0\",/' pyproject.toml && python -m pip install -e .[test] --verbose",
+    "test_cmd_with_directives": "pytest -rA astropy/io/ascii/tests/test_qdp.py"
+  },
+  "astropy__astropy-14995": {
+    "instance_id": "astropy__astropy-14995",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.428468730904ff6b4232aa:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/requires = \\[\"setuptools\",/requires = \\[\"setuptools==68.0.0\",/' pyproject.toml && python -m pip install -e .[test] --verbose",
+    "test_cmd_with_directives": "pytest -rA astropy/nddata/mixins/tests/test_ndarithmetic.py"
+  },
+  "astropy__astropy-6938": {
+    "instance_id": "astropy__astropy-6938",
+    "test_cmd": "pytest -rA -vv -o console_output_style=classic --tb=no",
+    "env_image_key": "sweb.env.arm64.c70974ae7654c7a2c98577:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .[test] --verbose",
+    "test_cmd_with_directives": "pytest -rA -vv -o console_output_style=classic --tb=no astropy/io/fits/tests/test_checksum.py astropy/io/fits/tests/test_table.py"
+  },
+  "astropy__astropy-7746": {
+    "instance_id": "astropy__astropy-7746",
+    "test_cmd": "pytest -rA -vv -o console_output_style=classic --tb=no",
+    "env_image_key": "sweb.env.arm64.c70974ae7654c7a2c98577:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .[test] --verbose",
+    "test_cmd_with_directives": "pytest -rA -vv -o console_output_style=classic --tb=no astropy/wcs/tests/test_wcs.py"
+  },
+  "django__django-10914": {
+    "instance_id": "django__django-10914",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 test_utils.tests"
+  },
+  "django__django-10924": {
+    "instance_id": "django__django-10924",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 model_fields.test_filepathfield"
+  },
+  "django__django-11001": {
+    "instance_id": "django__django-11001",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 expressions.tests"
+  },
+  "django__django-11019": {
+    "instance_id": "django__django-11019",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 admin_inlines.tests admin_widgets.test_autocomplete_widget forms_tests.tests.test_media"
+  },
+  "django__django-11039": {
+    "instance_id": "django__django-11039",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_commands"
+  },
+  "django__django-11049": {
+    "instance_id": "django__django-11049",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 model_fields.test_durationfield"
+  },
+  "django__django-11099": {
+    "instance_id": "django__django-11099",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 auth_tests.test_validators"
+  },
+  "django__django-11133": {
+    "instance_id": "django__django-11133",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 httpwrappers.tests"
+  },
+  "django__django-11179": {
+    "instance_id": "django__django-11179",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 delete.tests"
+  },
+  "django__django-11283": {
+    "instance_id": "django__django-11283",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 auth_tests.test_migrations"
+  },
+  "django__django-11422": {
+    "instance_id": "django__django-11422",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 utils_tests.test_autoreload"
+  },
+  "django__django-11564": {
+    "instance_id": "django__django-11564",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 file_storage.tests settings_tests.tests"
+  },
+  "django__django-11583": {
+    "instance_id": "django__django-11583",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 utils_tests.test_autoreload"
+  },
+  "django__django-11620": {
+    "instance_id": "django__django-11620",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 view_tests.tests.test_debug"
+  },
+  "django__django-11630": {
+    "instance_id": "django__django-11630",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 check_framework.test_model_checks"
+  },
+  "django__django-11742": {
+    "instance_id": "django__django-11742",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.2baaea72acc974f6c02079:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 invalid_models_tests.test_ordinary_fields"
+  },
+  "django__django-11797": {
+    "instance_id": "django__django-11797",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 lookup.tests"
+  },
+  "django__django-11815": {
+    "instance_id": "django__django-11815",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_writer"
+  },
+  "django__django-11848": {
+    "instance_id": "django__django-11848",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 utils_tests.test_http"
+  },
+  "django__django-11905": {
+    "instance_id": "django__django-11905",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 lookup.models lookup.tests"
+  },
+  "django__django-11910": {
+    "instance_id": "django__django-11910",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_autodetector"
+  },
+  "django__django-11964": {
+    "instance_id": "django__django-11964",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 model_enums.tests"
+  },
+  "django__django-11999": {
+    "instance_id": "django__django-11999",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 model_fields.tests"
+  },
+  "django__django-12113": {
+    "instance_id": "django__django-12113",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 backends.sqlite.test_creation"
+  },
+  "django__django-12125": {
+    "instance_id": "django__django-12125",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_writer"
+  },
+  "django__django-12184": {
+    "instance_id": "django__django-12184",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 urlpatterns.path_urls urlpatterns.tests"
+  },
+  "django__django-12284": {
+    "instance_id": "django__django-12284",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 model_fields.tests"
+  },
+  "django__django-12286": {
+    "instance_id": "django__django-12286",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 check_framework.test_translation"
+  },
+  "django__django-12308": {
+    "instance_id": "django__django-12308",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 admin_utils.tests"
+  },
+  "django__django-12453": {
+    "instance_id": "django__django-12453",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 backends.base.test_creation backends.models"
+  },
+  "django__django-12470": {
+    "instance_id": "django__django-12470",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 model_inheritance.models model_inheritance.tests"
+  },
+  "django__django-12497": {
+    "instance_id": "django__django-12497",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.x86_64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 invalid_models_tests.test_relative_fields"
+  },
+  "django__django-12589": {
+    "instance_id": "django__django-12589",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 aggregation.models aggregation.tests"
+  },
+  "django__django-12700": {
+    "instance_id": "django__django-12700",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 view_tests.tests.test_debug"
+  },
+  "django__django-12708": {
+    "instance_id": "django__django-12708",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_base migrations.test_operations"
+  },
+  "django__django-12747": {
+    "instance_id": "django__django-12747",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a18371b03f944585b4f08c:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 delete.tests"
+  },
+  "django__django-12856": {
+    "instance_id": "django__django-12856",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 invalid_models_tests.test_models"
+  },
+  "django__django-12908": {
+    "instance_id": "django__django-12908",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 queries.test_qs_combinators"
+  },
+  "django__django-12915": {
+    "instance_id": "django__django-12915",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 asgi.tests staticfiles_tests.test_handlers"
+  },
+  "django__django-12983": {
+    "instance_id": "django__django-12983",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 utils_tests.test_text"
+  },
+  "django__django-13028": {
+    "instance_id": "django__django-13028",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 queries.models queries.tests"
+  },
+  "django__django-13033": {
+    "instance_id": "django__django-13033",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 ordering.models ordering.tests"
+  },
+  "django__django-13158": {
+    "instance_id": "django__django-13158",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 queries.test_qs_combinators"
+  },
+  "django__django-13220": {
+    "instance_id": "django__django-13220",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 test_exceptions.test_validation_error"
+  },
+  "django__django-13230": {
+    "instance_id": "django__django-13230",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 syndication_tests.feeds syndication_tests.tests"
+  },
+  "django__django-13265": {
+    "instance_id": "django__django-13265",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_autodetector"
+  },
+  "django__django-13315": {
+    "instance_id": "django__django-13315",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 model_forms.models model_forms.tests"
+  },
+  "django__django-13321": {
+    "instance_id": "django__django-13321",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 sessions_tests.tests"
+  },
+  "django__django-13401": {
+    "instance_id": "django__django-13401",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 model_fields.tests"
+  },
+  "django__django-13447": {
+    "instance_id": "django__django-13447",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.x86_64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 admin_views.test_adminsite"
+  },
+  "django__django-13448": {
+    "instance_id": "django__django-13448",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 backends.base.app_unmigrated.__init__ backends.base.app_unmigrated.migrations.0001_initial backends.base.app_unmigrated.migrations.__init__ backends.base.app_unmigrated.models backends.base.test_creation"
+  },
+  "django__django-13551": {
+    "instance_id": "django__django-13551",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 auth_tests.models.__init__ auth_tests.models.with_custom_email_field auth_tests.test_models auth_tests.test_tokens"
+  },
+  "django__django-13590": {
+    "instance_id": "django__django-13590",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 expressions.tests"
+  },
+  "django__django-13658": {
+    "instance_id": "django__django-13658",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 admin_scripts.tests"
+  },
+  "django__django-13660": {
+    "instance_id": "django__django-13660",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 shell.tests"
+  },
+  "django__django-13710": {
+    "instance_id": "django__django-13710",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 admin_inlines.tests"
+  },
+  "django__django-13757": {
+    "instance_id": "django__django-13757",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 model_fields.test_jsonfield"
+  },
+  "django__django-13768": {
+    "instance_id": "django__django-13768",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.e83e37f52c09532c62acfb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 dispatch.tests"
+  },
+  "django__django-13925": {
+    "instance_id": "django__django-13925",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 check_framework.test_model_checks"
+  },
+  "django__django-13933": {
+    "instance_id": "django__django-13933",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 forms_tests.tests.test_error_messages"
+  },
+  "django__django-13964": {
+    "instance_id": "django__django-13964",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 many_to_one.models many_to_one.tests"
+  },
+  "django__django-14016": {
+    "instance_id": "django__django-14016",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 queries.test_q"
+  },
+  "django__django-14017": {
+    "instance_id": "django__django-14017",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 expressions.tests"
+  },
+  "django__django-14155": {
+    "instance_id": "django__django-14155",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.x86_64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 urlpatterns_reverse.tests"
+  },
+  "django__django-14238": {
+    "instance_id": "django__django-14238",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 model_fields.test_autofield model_options.test_default_pk"
+  },
+  "django__django-14382": {
+    "instance_id": "django__django-14382",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 admin_scripts.tests"
+  },
+  "django__django-14411": {
+    "instance_id": "django__django-14411",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 auth_tests.test_forms"
+  },
+  "django__django-14534": {
+    "instance_id": "django__django-14534",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 forms_tests.tests.test_forms"
+  },
+  "django__django-14580": {
+    "instance_id": "django__django-14580",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_writer"
+  },
+  "django__django-14608": {
+    "instance_id": "django__django-14608",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 admin_views.tests forms_tests.tests.test_formsets"
+  },
+  "django__django-14667": {
+    "instance_id": "django__django-14667",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 defer.tests"
+  },
+  "django__django-14672": {
+    "instance_id": "django__django-14672",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 invalid_models_tests.test_models m2m_through.models m2m_through.tests"
+  },
+  "django__django-14730": {
+    "instance_id": "django__django-14730",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 field_deconstruction.tests invalid_models_tests.test_relative_fields model_meta.models"
+  },
+  "django__django-14752": {
+    "instance_id": "django__django-14752",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 admin_views.test_autocomplete_view"
+  },
+  "django__django-14787": {
+    "instance_id": "django__django-14787",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 decorators.tests"
+  },
+  "django__django-14855": {
+    "instance_id": "django__django-14855",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.297af196949a2a635bce66:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 admin_views.admin admin_views.tests"
+  },
+  "django__django-14915": {
+    "instance_id": "django__django-14915",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 model_forms.test_modelchoicefield"
+  },
+  "django__django-14997": {
+    "instance_id": "django__django-14997",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 backends.test_ddl_references migrations.test_operations"
+  },
+  "django__django-14999": {
+    "instance_id": "django__django-14999",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_operations"
+  },
+  "django__django-15061": {
+    "instance_id": "django__django-15061",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 forms_tests.field_tests.test_multivaluefield forms_tests.field_tests.test_splitdatetimefield postgres_tests.test_ranges"
+  },
+  "django__django-15202": {
+    "instance_id": "django__django-15202",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 forms_tests.field_tests.test_urlfield"
+  },
+  "django__django-15213": {
+    "instance_id": "django__django-15213",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 annotations.tests"
+  },
+  "django__django-15252": {
+    "instance_id": "django__django-15252",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 backends.base.test_creation migrations.test_executor"
+  },
+  "django__django-15320": {
+    "instance_id": "django__django-15320",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 expressions.tests"
+  },
+  "django__django-15347": {
+    "instance_id": "django__django-15347",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 messages_tests.test_cookie"
+  },
+  "django__django-15388": {
+    "instance_id": "django__django-15388",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 template_tests.test_autoreloader"
+  },
+  "django__django-15400": {
+    "instance_id": "django__django-15400",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 utils_tests.test_lazyobject"
+  },
+  "django__django-15498": {
+    "instance_id": "django__django-15498",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 view_tests.tests.test_static"
+  },
+  "django__django-15695": {
+    "instance_id": "django__django-15695",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.x86_64.934a137824256b612e9dc5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_operations"
+  },
+  "django__django-15738": {
+    "instance_id": "django__django-15738",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_autodetector"
+  },
+  "django__django-15781": {
+    "instance_id": "django__django-15781",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.x86_64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 user_commands.tests"
+  },
+  "django__django-15789": {
+    "instance_id": "django__django-15789",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 utils_tests.test_html"
+  },
+  "django__django-15790": {
+    "instance_id": "django__django-15790",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 check_framework.test_templates"
+  },
+  "django__django-15814": {
+    "instance_id": "django__django-15814",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 proxy_models.tests"
+  },
+  "django__django-15819": {
+    "instance_id": "django__django-15819",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 inspectdb.models inspectdb.tests"
+  },
+  "django__django-15851": {
+    "instance_id": "django__django-15851",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 dbshell.test_postgresql"
+  },
+  "django__django-15902": {
+    "instance_id": "django__django-15902",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 forms_tests.tests.test_formsets"
+  },
+  "django__django-15996": {
+    "instance_id": "django__django-15996",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_writer"
+  },
+  "django__django-16041": {
+    "instance_id": "django__django-16041",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 forms_tests.tests.test_formsets"
+  },
+  "django__django-16046": {
+    "instance_id": "django__django-16046",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 utils_tests.test_numberformat"
+  },
+  "django__django-16139": {
+    "instance_id": "django__django-16139",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 auth_tests.test_forms"
+  },
+  "django__django-16229": {
+    "instance_id": "django__django-16229",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 forms_tests.tests.tests"
+  },
+  "django__django-16255": {
+    "instance_id": "django__django-16255",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 sitemaps_tests.test_http sitemaps_tests.urls.http"
+  },
+  "django__django-16379": {
+    "instance_id": "django__django-16379",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 cache.tests"
+  },
+  "django__django-16400": {
+    "instance_id": "django__django-16400",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.a33dddf55cdff5d8e23374:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 auth_tests.test_management"
+  },
+  "django__django-16408": {
+    "instance_id": "django__django-16408",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.c70909fdac4897d1c685df:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 known_related_objects.tests"
+  },
+  "django__django-16527": {
+    "instance_id": "django__django-16527",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.c70909fdac4897d1c685df:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 admin_views.test_templatetags"
+  },
+  "django__django-16595": {
+    "instance_id": "django__django-16595",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.c70909fdac4897d1c685df:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_optimizer"
+  },
+  "django__django-16816": {
+    "instance_id": "django__django-16816",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.c70909fdac4897d1c685df:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 modeladmin.test_checks"
+  },
+  "django__django-16820": {
+    "instance_id": "django__django-16820",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.c70909fdac4897d1c685df:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_autodetector migrations.test_optimizer"
+  },
+  "django__django-16873": {
+    "instance_id": "django__django-16873",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.c70909fdac4897d1c685df:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 template_tests.filter_tests.test_join"
+  },
+  "django__django-16910": {
+    "instance_id": "django__django-16910",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.c70909fdac4897d1c685df:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 defer_regress.tests select_related_onetoone.tests"
+  },
+  "django__django-17051": {
+    "instance_id": "django__django-17051",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.c70909fdac4897d1c685df:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 bulk_create.tests"
+  },
+  "django__django-17087": {
+    "instance_id": "django__django-17087",
+    "test_cmd": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1",
+    "env_image_key": "sweb.env.arm64.c70909fdac4897d1c685df:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "./tests/runtests.py --verbosity 2 --settings=test_sqlite --parallel 1 migrations.test_writer"
+  },
+  "matplotlib__matplotlib-18869": {
+    "instance_id": "matplotlib__matplotlib-18869",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.6b007979cf533f0f3016e8:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg libfreetype6-dev pkg-config texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_matplotlib.py"
+  },
+  "matplotlib__matplotlib-22711": {
+    "instance_id": "matplotlib__matplotlib-22711",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.7037e8c448a4b8ebfe9b13:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_widgets.py"
+  },
+  "matplotlib__matplotlib-22835": {
+    "instance_id": "matplotlib__matplotlib-22835",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.7037e8c448a4b8ebfe9b13:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_artist.py"
+  },
+  "matplotlib__matplotlib-23299": {
+    "instance_id": "matplotlib__matplotlib-23299",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.7037e8c448a4b8ebfe9b13:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_rcparams.py"
+  },
+  "matplotlib__matplotlib-23314": {
+    "instance_id": "matplotlib__matplotlib-23314",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.7037e8c448a4b8ebfe9b13:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_axes.py lib/mpl_toolkits/tests/test_mplot3d.py"
+  },
+  "matplotlib__matplotlib-23476": {
+    "instance_id": "matplotlib__matplotlib-23476",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.7037e8c448a4b8ebfe9b13:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_figure.py"
+  },
+  "matplotlib__matplotlib-23562": {
+    "instance_id": "matplotlib__matplotlib-23562",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.7037e8c448a4b8ebfe9b13:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/mpl_toolkits/tests/test_mplot3d.py"
+  },
+  "matplotlib__matplotlib-23563": {
+    "instance_id": "matplotlib__matplotlib-23563",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.7037e8c448a4b8ebfe9b13:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/mpl_toolkits/tests/test_mplot3d.py"
+  },
+  "matplotlib__matplotlib-23913": {
+    "instance_id": "matplotlib__matplotlib-23913",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.31244378a92e3bcce809ac:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_legend.py"
+  },
+  "matplotlib__matplotlib-23964": {
+    "instance_id": "matplotlib__matplotlib-23964",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.31244378a92e3bcce809ac:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_backend_ps.py"
+  },
+  "matplotlib__matplotlib-23987": {
+    "instance_id": "matplotlib__matplotlib-23987",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.31244378a92e3bcce809ac:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_constrainedlayout.py"
+  },
+  "matplotlib__matplotlib-24149": {
+    "instance_id": "matplotlib__matplotlib-24149",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.31244378a92e3bcce809ac:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_axes.py"
+  },
+  "matplotlib__matplotlib-24265": {
+    "instance_id": "matplotlib__matplotlib-24265",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.31244378a92e3bcce809ac:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_style.py"
+  },
+  "matplotlib__matplotlib-24334": {
+    "instance_id": "matplotlib__matplotlib-24334",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.31244378a92e3bcce809ac:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_axes.py"
+  },
+  "matplotlib__matplotlib-24970": {
+    "instance_id": "matplotlib__matplotlib-24970",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.31244378a92e3bcce809ac:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_colors.py"
+  },
+  "matplotlib__matplotlib-25079": {
+    "instance_id": "matplotlib__matplotlib-25079",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.31244378a92e3bcce809ac:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_colors.py"
+  },
+  "matplotlib__matplotlib-25311": {
+    "instance_id": "matplotlib__matplotlib-25311",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.efa6065ed5bf204410fd53:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_pickle.py"
+  },
+  "matplotlib__matplotlib-25332": {
+    "instance_id": "matplotlib__matplotlib-25332",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.efa6065ed5bf204410fd53:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_pickle.py"
+  },
+  "matplotlib__matplotlib-25433": {
+    "instance_id": "matplotlib__matplotlib-25433",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.efa6065ed5bf204410fd53:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_backend_bases.py"
+  },
+  "matplotlib__matplotlib-25442": {
+    "instance_id": "matplotlib__matplotlib-25442",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.efa6065ed5bf204410fd53:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_offsetbox.py"
+  },
+  "matplotlib__matplotlib-25498": {
+    "instance_id": "matplotlib__matplotlib-25498",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.efa6065ed5bf204410fd53:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_colorbar.py"
+  },
+  "matplotlib__matplotlib-26011": {
+    "instance_id": "matplotlib__matplotlib-26011",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.efa6065ed5bf204410fd53:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/matplotlib/tests/test_axes.py"
+  },
+  "matplotlib__matplotlib-26020": {
+    "instance_id": "matplotlib__matplotlib-26020",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.efa6065ed5bf204410fd53:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && apt-get -y update && apt-get -y upgrade && apt-get install -y imagemagick ffmpeg texlive texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-luatex cm-super dvipng && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py"
+  },
+  "mwaskom__seaborn-2848": {
+    "instance_id": "mwaskom__seaborn-2848",
+    "test_cmd": "pytest --no-header -rA",
+    "env_image_key": "sweb.env.arm64.a0efca7a0fe6719dbf65c2:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .[dev]",
+    "test_cmd_with_directives": "pytest --no-header -rA tests/test_relational.py"
+  },
+  "mwaskom__seaborn-3010": {
+    "instance_id": "mwaskom__seaborn-3010",
+    "test_cmd": "pytest --no-header -rA",
+    "env_image_key": "sweb.env.arm64.a0efca7a0fe6719dbf65c2:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .[dev]",
+    "test_cmd_with_directives": "pytest --no-header -rA tests/_stats/test_regression.py"
+  },
+  "mwaskom__seaborn-3190": {
+    "instance_id": "mwaskom__seaborn-3190",
+    "test_cmd": "pytest --no-header -rA",
+    "env_image_key": "sweb.env.arm64.a0efca7a0fe6719dbf65c2:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .[dev]",
+    "test_cmd_with_directives": "pytest --no-header -rA tests/_core/test_scales.py"
+  },
+  "mwaskom__seaborn-3407": {
+    "instance_id": "mwaskom__seaborn-3407",
+    "test_cmd": "pytest --no-header -rA",
+    "env_image_key": "sweb.env.arm64.a0efca7a0fe6719dbf65c2:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .[dev]",
+    "test_cmd_with_directives": "pytest --no-header -rA tests/test_axisgrid.py"
+  },
+  "pallets__flask-4045": {
+    "instance_id": "pallets__flask-4045",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.d13cdf3c18bec0743c2ba2:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA tests/test_basic.py tests/test_blueprints.py"
+  },
+  "pallets__flask-4992": {
+    "instance_id": "pallets__flask-4992",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.78278ae2cf880e395f1337:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA tests/test_config.py"
+  },
+  "pallets__flask-5063": {
+    "instance_id": "pallets__flask-5063",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.78278ae2cf880e395f1337:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA tests/test_cli.py"
+  },
+  "psf__requests-1963": {
+    "instance_id": "psf__requests-1963",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.1f92e6d7cef88badc4f744:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install .",
+    "test_cmd_with_directives": "pytest -rA test_requests.py"
+  },
+  "psf__requests-2148": {
+    "instance_id": "psf__requests-2148",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.1f92e6d7cef88badc4f744:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install .",
+    "test_cmd_with_directives": "pytest -rA test_requests.py"
+  },
+  "psf__requests-2317": {
+    "instance_id": "psf__requests-2317",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.1f92e6d7cef88badc4f744:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install .",
+    "test_cmd_with_directives": "pytest -rA test_requests.py"
+  },
+  "psf__requests-2674": {
+    "instance_id": "psf__requests-2674",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.1f92e6d7cef88badc4f744:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install .",
+    "test_cmd_with_directives": "pytest -rA test_requests.py"
+  },
+  "psf__requests-3362": {
+    "instance_id": "psf__requests-3362",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.1f92e6d7cef88badc4f744:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install .",
+    "test_cmd_with_directives": "pytest -rA tests/test_requests.py"
+  },
+  "psf__requests-863": {
+    "instance_id": "psf__requests-863",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.1f92e6d7cef88badc4f744:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install .",
+    "test_cmd_with_directives": "pytest -rA tests/test_requests.py"
+  },
+  "pydata__xarray-3364": {
+    "instance_id": "pydata__xarray-3364",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.502d8fc6ebccd881244091:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA xarray/tests/test_combine.py xarray/tests/test_concat.py"
+  },
+  "pydata__xarray-4094": {
+    "instance_id": "pydata__xarray-4094",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.502d8fc6ebccd881244091:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA xarray/tests/test_dataset.py"
+  },
+  "pydata__xarray-4248": {
+    "instance_id": "pydata__xarray-4248",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.502d8fc6ebccd881244091:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA xarray/tests/test_formatting.py"
+  },
+  "pydata__xarray-4493": {
+    "instance_id": "pydata__xarray-4493",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.502d8fc6ebccd881244091:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA xarray/tests/test_dask.py xarray/tests/test_dataset.py xarray/tests/test_interp.py xarray/tests/test_variable.py"
+  },
+  "pydata__xarray-5131": {
+    "instance_id": "pydata__xarray-5131",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.502d8fc6ebccd881244091:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA xarray/tests/test_groupby.py"
+  },
+  "pylint-dev__pylint-5859": {
+    "instance_id": "pylint-dev__pylint-5859",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.e5bb89bf78258a7d14c34b:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA tests/checkers/unittest_misc.py"
+  },
+  "pylint-dev__pylint-6506": {
+    "instance_id": "pylint-dev__pylint-6506",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.e3afd7f04b325a4de4982d:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA tests/config/test_config.py"
+  },
+  "pylint-dev__pylint-7080": {
+    "instance_id": "pylint-dev__pylint-7080",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.b649f0ff62fad147f7f073:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA tests/test_self.py"
+  },
+  "pylint-dev__pylint-7114": {
+    "instance_id": "pylint-dev__pylint-7114",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.b649f0ff62fad147f7f073:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA tests/checkers/unittest_imports.py tests/lint/unittest_lint.py"
+  },
+  "pylint-dev__pylint-7228": {
+    "instance_id": "pylint-dev__pylint-7228",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.b649f0ff62fad147f7f073:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA tests/config/test_config.py"
+  },
+  "pylint-dev__pylint-7993": {
+    "instance_id": "pylint-dev__pylint-7993",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.b649f0ff62fad147f7f073:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA tests/reporters/unittest_reporting.py"
+  },
+  "pytest-dev__pytest-11143": {
+    "instance_id": "pytest-dev__pytest-11143",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.0f99bce2750f3109957bec:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/test_assertrewrite.py"
+  },
+  "pytest-dev__pytest-11148": {
+    "instance_id": "pytest-dev__pytest-11148",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.0f99bce2750f3109957bec:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/acceptance_test.py testing/test_pathlib.py"
+  },
+  "pytest-dev__pytest-5103": {
+    "instance_id": "pytest-dev__pytest-5103",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.756beac07713d7e8dc1129:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/test_assertrewrite.py"
+  },
+  "pytest-dev__pytest-5221": {
+    "instance_id": "pytest-dev__pytest-5221",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.71498c7426dbf05599642f:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/python/fixtures.py"
+  },
+  "pytest-dev__pytest-5227": {
+    "instance_id": "pytest-dev__pytest-5227",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.71498c7426dbf05599642f:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/logging/test_reporting.py"
+  },
+  "pytest-dev__pytest-5413": {
+    "instance_id": "pytest-dev__pytest-5413",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.088a7e628bda9770f9757b:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/code/test_excinfo.py"
+  },
+  "pytest-dev__pytest-5495": {
+    "instance_id": "pytest-dev__pytest-5495",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.088a7e628bda9770f9757b:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/test_assertion.py"
+  },
+  "pytest-dev__pytest-5692": {
+    "instance_id": "pytest-dev__pytest-5692",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.1c1a6945f732f9391228c5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/test_junitxml.py"
+  },
+  "pytest-dev__pytest-6116": {
+    "instance_id": "pytest-dev__pytest-6116",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.1c1a6945f732f9391228c5:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/test_collection.py"
+  },
+  "pytest-dev__pytest-7168": {
+    "instance_id": "pytest-dev__pytest-7168",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.5d1fda9d55d65d8a4e5bdb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/io/test_saferepr.py"
+  },
+  "pytest-dev__pytest-7220": {
+    "instance_id": "pytest-dev__pytest-7220",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.5d1fda9d55d65d8a4e5bdb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/test_nodes.py"
+  },
+  "pytest-dev__pytest-7373": {
+    "instance_id": "pytest-dev__pytest-7373",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.5d1fda9d55d65d8a4e5bdb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/test_mark.py"
+  },
+  "pytest-dev__pytest-7432": {
+    "instance_id": "pytest-dev__pytest-7432",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.5d1fda9d55d65d8a4e5bdb:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/test_skipping.py"
+  },
+  "pytest-dev__pytest-7490": {
+    "instance_id": "pytest-dev__pytest-7490",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.cc47cc71483942d0c3a15e:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/test_skipping.py"
+  },
+  "pytest-dev__pytest-8365": {
+    "instance_id": "pytest-dev__pytest-8365",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.8f1f7b974f0c57c7aeba39:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/test_tmpdir.py"
+  },
+  "pytest-dev__pytest-8906": {
+    "instance_id": "pytest-dev__pytest-8906",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.b7ce4be3b3c35f68c61248:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/test_skipping.py"
+  },
+  "pytest-dev__pytest-9359": {
+    "instance_id": "pytest-dev__pytest-9359",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.b7ce4be3b3c35f68c61248:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "pytest -rA testing/code/test_source.py"
+  },
+  "scikit-learn__scikit-learn-10297": {
+    "instance_id": "scikit-learn__scikit-learn-10297",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/linear_model/tests/test_ridge.py"
+  },
+  "scikit-learn__scikit-learn-10508": {
+    "instance_id": "scikit-learn__scikit-learn-10508",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/preprocessing/tests/test_label.py"
+  },
+  "scikit-learn__scikit-learn-10949": {
+    "instance_id": "scikit-learn__scikit-learn-10949",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/utils/tests/test_validation.py"
+  },
+  "scikit-learn__scikit-learn-11040": {
+    "instance_id": "scikit-learn__scikit-learn-11040",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/neighbors/tests/test_neighbors.py"
+  },
+  "scikit-learn__scikit-learn-11281": {
+    "instance_id": "scikit-learn__scikit-learn-11281",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/mixture/tests/test_bayesian_mixture.py sklearn/mixture/tests/test_gaussian_mixture.py"
+  },
+  "scikit-learn__scikit-learn-12471": {
+    "instance_id": "scikit-learn__scikit-learn-12471",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/preprocessing/tests/test_encoders.py"
+  },
+  "scikit-learn__scikit-learn-13142": {
+    "instance_id": "scikit-learn__scikit-learn-13142",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/mixture/tests/test_bayesian_mixture.py sklearn/mixture/tests/test_gaussian_mixture.py"
+  },
+  "scikit-learn__scikit-learn-13241": {
+    "instance_id": "scikit-learn__scikit-learn-13241",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/decomposition/tests/test_kernel_pca.py sklearn/decomposition/tests/test_pca.py"
+  },
+  "scikit-learn__scikit-learn-13439": {
+    "instance_id": "scikit-learn__scikit-learn-13439",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/tests/test_pipeline.py"
+  },
+  "scikit-learn__scikit-learn-13496": {
+    "instance_id": "scikit-learn__scikit-learn-13496",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/ensemble/tests/test_iforest.py"
+  },
+  "scikit-learn__scikit-learn-13497": {
+    "instance_id": "scikit-learn__scikit-learn-13497",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/feature_selection/tests/test_mutual_info.py"
+  },
+  "scikit-learn__scikit-learn-13584": {
+    "instance_id": "scikit-learn__scikit-learn-13584",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/utils/tests/test_pprint.py"
+  },
+  "scikit-learn__scikit-learn-13779": {
+    "instance_id": "scikit-learn__scikit-learn-13779",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/ensemble/tests/test_voting.py"
+  },
+  "scikit-learn__scikit-learn-14087": {
+    "instance_id": "scikit-learn__scikit-learn-14087",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/linear_model/tests/test_logistic.py"
+  },
+  "scikit-learn__scikit-learn-14092": {
+    "instance_id": "scikit-learn__scikit-learn-14092",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/neighbors/tests/test_nca.py"
+  },
+  "scikit-learn__scikit-learn-14894": {
+    "instance_id": "scikit-learn__scikit-learn-14894",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/svm/tests/test_svm.py"
+  },
+  "scikit-learn__scikit-learn-14983": {
+    "instance_id": "scikit-learn__scikit-learn-14983",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/model_selection/tests/test_split.py"
+  },
+  "scikit-learn__scikit-learn-15512": {
+    "instance_id": "scikit-learn__scikit-learn-15512",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/cluster/tests/test_affinity_propagation.py"
+  },
+  "scikit-learn__scikit-learn-15535": {
+    "instance_id": "scikit-learn__scikit-learn-15535",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.x86_64.aa92880033da20ca313928:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/metrics/cluster/tests/test_common.py"
+  },
+  "scikit-learn__scikit-learn-25500": {
+    "instance_id": "scikit-learn__scikit-learn-25500",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.27dd9791e13f5c857a09f9:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/tests/test_isotonic.py"
+  },
+  "scikit-learn__scikit-learn-25570": {
+    "instance_id": "scikit-learn__scikit-learn-25570",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.27dd9791e13f5c857a09f9:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/compose/tests/test_column_transformer.py"
+  },
+  "scikit-learn__scikit-learn-25638": {
+    "instance_id": "scikit-learn__scikit-learn-25638",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.27dd9791e13f5c857a09f9:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py"
+  },
+  "scikit-learn__scikit-learn-25747": {
+    "instance_id": "scikit-learn__scikit-learn-25747",
+    "test_cmd": "pytest -rA",
+    "env_image_key": "sweb.env.arm64.27dd9791e13f5c857a09f9:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -v --no-use-pep517 --no-build-isolation -e .",
+    "test_cmd_with_directives": "pytest -rA sklearn/utils/tests/test_set_output.py"
+  },
+  "sphinx-doc__sphinx-10325": {
+    "instance_id": "sphinx-doc__sphinx-10325",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/roots/test-ext-autodoc/target/inheritance.py tests/test_ext_autodoc_automodule.py"
+  },
+  "sphinx-doc__sphinx-10451": {
+    "instance_id": "sphinx-doc__sphinx-10451",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/roots/test-ext-autodoc/target/typehints.py tests/roots/test-ext-napoleon/conf.py tests/roots/test-ext-napoleon/index.rst tests/roots/test-ext-napoleon/mypackage/__init__.py tests/roots/test-ext-napoleon/mypackage/typehints.py tests/roots/test-ext-napoleon/typehints.rst tests/test_ext_autodoc_configs.py tests/test_ext_napoleon_docstring.py"
+  },
+  "sphinx-doc__sphinx-11445": {
+    "instance_id": "sphinx-doc__sphinx-11445",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/test_util_rst.py"
+  },
+  "sphinx-doc__sphinx-7686": {
+    "instance_id": "sphinx-doc__sphinx-7686",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/roots/test-ext-autosummary/autosummary_dummy_module.py tests/test_ext_autosummary.py"
+  },
+  "sphinx-doc__sphinx-7738": {
+    "instance_id": "sphinx-doc__sphinx-7738",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/test_ext_napoleon_docstring.py"
+  },
+  "sphinx-doc__sphinx-7975": {
+    "instance_id": "sphinx-doc__sphinx-7975",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/test_environment_indexentries.py"
+  },
+  "sphinx-doc__sphinx-8273": {
+    "instance_id": "sphinx-doc__sphinx-8273",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/test_build_manpage.py"
+  },
+  "sphinx-doc__sphinx-8282": {
+    "instance_id": "sphinx-doc__sphinx-8282",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/test_ext_autodoc_configs.py"
+  },
+  "sphinx-doc__sphinx-8435": {
+    "instance_id": "sphinx-doc__sphinx-8435",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/roots/test-ext-autodoc/target/annotations.py tests/test_ext_autodoc_configs.py"
+  },
+  "sphinx-doc__sphinx-8474": {
+    "instance_id": "sphinx-doc__sphinx-8474",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/test_build_html.py"
+  },
+  "sphinx-doc__sphinx-8506": {
+    "instance_id": "sphinx-doc__sphinx-8506",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/test_domain_std.py"
+  },
+  "sphinx-doc__sphinx-8595": {
+    "instance_id": "sphinx-doc__sphinx-8595",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/roots/test-ext-autodoc/target/empty_all.py tests/test_ext_autodoc_automodule.py"
+  },
+  "sphinx-doc__sphinx-8627": {
+    "instance_id": "sphinx-doc__sphinx-8627",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/test_util_typing.py"
+  },
+  "sphinx-doc__sphinx-8713": {
+    "instance_id": "sphinx-doc__sphinx-8713",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/test_ext_napoleon_docstring.py"
+  },
+  "sphinx-doc__sphinx-8721": {
+    "instance_id": "sphinx-doc__sphinx-8721",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/test_ext_viewcode.py"
+  },
+  "sphinx-doc__sphinx-8801": {
+    "instance_id": "sphinx-doc__sphinx-8801",
+    "test_cmd": "tox --current-env -epy39 -v --",
+    "env_image_key": "sweb.env.arm64.c6d251a05e0af7688b64fd:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && sed -i 's/pytest/pytest -rA/' tox.ini && sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py && sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py && sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py && sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py && sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py && sed -i \"s/'packaging',/'packaging', 'markupsafe<=2.0.1',/\" setup.py && sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py && sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py && python -m pip install -e .[test]",
+    "test_cmd_with_directives": "tox --current-env -epy39 -v -- tests/roots/test-ext-autodoc/target/uninitialized_attributes.py tests/test_ext_autodoc_autoclass.py"
+  },
+  "sympy__sympy-11400": {
+    "instance_id": "sympy__sympy-11400",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_ccode.py"
+  },
+  "sympy__sympy-11870": {
+    "instance_id": "sympy__sympy-11870",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/functions/elementary/tests/test_trigonometric.py"
+  },
+  "sympy__sympy-11897": {
+    "instance_id": "sympy__sympy-11897",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_latex.py"
+  },
+  "sympy__sympy-12171": {
+    "instance_id": "sympy__sympy-12171",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_mathematica.py"
+  },
+  "sympy__sympy-12236": {
+    "instance_id": "sympy__sympy-12236",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/polys/tests/test_partfrac.py sympy/polys/tests/test_polytools.py"
+  },
+  "sympy__sympy-12419": {
+    "instance_id": "sympy__sympy-12419",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/matrices/expressions/tests/test_matexpr.py"
+  },
+  "sympy__sympy-12454": {
+    "instance_id": "sympy__sympy-12454",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/matrices/tests/test_matrices.py"
+  },
+  "sympy__sympy-12481": {
+    "instance_id": "sympy__sympy-12481",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/combinatorics/tests/test_permutations.py"
+  },
+  "sympy__sympy-13031": {
+    "instance_id": "sympy__sympy-13031",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/matrices/tests/test_sparse.py"
+  },
+  "sympy__sympy-13043": {
+    "instance_id": "sympy__sympy-13043",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/integrals/tests/test_intpoly.py"
+  },
+  "sympy__sympy-13146": {
+    "instance_id": "sympy__sympy-13146",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_evalf.py"
+  },
+  "sympy__sympy-13177": {
+    "instance_id": "sympy__sympy-13177",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_numbers.py"
+  },
+  "sympy__sympy-13437": {
+    "instance_id": "sympy__sympy-13437",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/functions/combinatorial/tests/test_comb_numbers.py"
+  },
+  "sympy__sympy-13471": {
+    "instance_id": "sympy__sympy-13471",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_numbers.py"
+  },
+  "sympy__sympy-13480": {
+    "instance_id": "sympy__sympy-13480",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/functions/elementary/tests/test_hyperbolic.py"
+  },
+  "sympy__sympy-13647": {
+    "instance_id": "sympy__sympy-13647",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/matrices/tests/test_commonmatrix.py"
+  },
+  "sympy__sympy-13773": {
+    "instance_id": "sympy__sympy-13773",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/matrices/tests/test_commonmatrix.py"
+  },
+  "sympy__sympy-13895": {
+    "instance_id": "sympy__sympy-13895",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_numbers.py"
+  },
+  "sympy__sympy-13915": {
+    "instance_id": "sympy__sympy-13915",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_arit.py"
+  },
+  "sympy__sympy-13971": {
+    "instance_id": "sympy__sympy-13971",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_latex.py"
+  },
+  "sympy__sympy-14024": {
+    "instance_id": "sympy__sympy-14024",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_numbers.py"
+  },
+  "sympy__sympy-14308": {
+    "instance_id": "sympy__sympy-14308",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py sympy/vector/tests/test_printing.py"
+  },
+  "sympy__sympy-14317": {
+    "instance_id": "sympy__sympy-14317",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_latex.py"
+  },
+  "sympy__sympy-14396": {
+    "instance_id": "sympy__sympy-14396",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/polys/tests/test_polyoptions.py"
+  },
+  "sympy__sympy-14774": {
+    "instance_id": "sympy__sympy-14774",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_latex.py"
+  },
+  "sympy__sympy-14817": {
+    "instance_id": "sympy__sympy-14817",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py"
+  },
+  "sympy__sympy-15011": {
+    "instance_id": "sympy__sympy-15011",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/utilities/tests/test_lambdify.py"
+  },
+  "sympy__sympy-15308": {
+    "instance_id": "sympy__sympy-15308",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_latex.py"
+  },
+  "sympy__sympy-15345": {
+    "instance_id": "sympy__sympy-15345",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_mathematica.py"
+  },
+  "sympy__sympy-15346": {
+    "instance_id": "sympy__sympy-15346",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/simplify/tests/test_trigsimp.py"
+  },
+  "sympy__sympy-15609": {
+    "instance_id": "sympy__sympy-15609",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_latex.py"
+  },
+  "sympy__sympy-15678": {
+    "instance_id": "sympy__sympy-15678",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/geometry/tests/test_util.py"
+  },
+  "sympy__sympy-16106": {
+    "instance_id": "sympy__sympy-16106",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_mathml.py"
+  },
+  "sympy__sympy-16281": {
+    "instance_id": "sympy__sympy-16281",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py"
+  },
+  "sympy__sympy-16503": {
+    "instance_id": "sympy__sympy-16503",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py"
+  },
+  "sympy__sympy-16792": {
+    "instance_id": "sympy__sympy-16792",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/utilities/tests/test_codegen.py"
+  },
+  "sympy__sympy-16988": {
+    "instance_id": "sympy__sympy-16988",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/sets/tests/test_sets.py"
+  },
+  "sympy__sympy-17022": {
+    "instance_id": "sympy__sympy-17022",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_numpy.py sympy/printing/tests/test_pycode.py"
+  },
+  "sympy__sympy-17139": {
+    "instance_id": "sympy__sympy-17139",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/simplify/tests/test_fu.py sympy/simplify/tests/test_simplify.py"
+  },
+  "sympy__sympy-17630": {
+    "instance_id": "sympy__sympy-17630",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/matrices/expressions/tests/test_blockmatrix.py sympy/matrices/expressions/tests/test_matadd.py"
+  },
+  "sympy__sympy-17655": {
+    "instance_id": "sympy__sympy-17655",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/geometry/tests/test_point.py"
+  },
+  "sympy__sympy-18057": {
+    "instance_id": "sympy__sympy-18057",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_expr.py sympy/core/tests/test_var.py"
+  },
+  "sympy__sympy-18087": {
+    "instance_id": "sympy__sympy-18087",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_exprtools.py sympy/simplify/tests/test_fu.py"
+  },
+  "sympy__sympy-18189": {
+    "instance_id": "sympy__sympy-18189",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/solvers/tests/test_diophantine.py"
+  },
+  "sympy__sympy-18199": {
+    "instance_id": "sympy__sympy-18199",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/ntheory/tests/test_residue.py sympy/solvers/tests/test_solveset.py"
+  },
+  "sympy__sympy-18532": {
+    "instance_id": "sympy__sympy-18532",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/codegen/tests/test_cnodes.py sympy/core/tests/test_basic.py"
+  },
+  "sympy__sympy-18621": {
+    "instance_id": "sympy__sympy-18621",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/matrices/expressions/tests/test_blockmatrix.py"
+  },
+  "sympy__sympy-18698": {
+    "instance_id": "sympy__sympy-18698",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/polys/tests/test_polytools.py"
+  },
+  "sympy__sympy-18835": {
+    "instance_id": "sympy__sympy-18835",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/utilities/tests/test_iterables.py"
+  },
+  "sympy__sympy-19007": {
+    "instance_id": "sympy__sympy-19007",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/matrices/expressions/tests/test_blockmatrix.py sympy/matrices/expressions/tests/test_indexing.py"
+  },
+  "sympy__sympy-19254": {
+    "instance_id": "sympy__sympy-19254",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/polys/tests/test_factortools.py"
+  },
+  "sympy__sympy-19487": {
+    "instance_id": "sympy__sympy-19487",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_subs.py sympy/functions/elementary/tests/test_complexes.py"
+  },
+  "sympy__sympy-20049": {
+    "instance_id": "sympy__sympy-20049",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/physics/vector/tests/test_point.py"
+  },
+  "sympy__sympy-20154": {
+    "instance_id": "sympy__sympy-20154",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/utilities/tests/test_iterables.py"
+  },
+  "sympy__sympy-20212": {
+    "instance_id": "sympy__sympy-20212",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_power.py"
+  },
+  "sympy__sympy-20322": {
+    "instance_id": "sympy__sympy-20322",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_arit.py"
+  },
+  "sympy__sympy-20442": {
+    "instance_id": "sympy__sympy-20442",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/physics/units/tests/test_quantities.py"
+  },
+  "sympy__sympy-20590": {
+    "instance_id": "sympy__sympy-20590",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_basic.py"
+  },
+  "sympy__sympy-20639": {
+    "instance_id": "sympy__sympy-20639",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py"
+  },
+  "sympy__sympy-21055": {
+    "instance_id": "sympy__sympy-21055",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/assumptions/tests/test_refine.py"
+  },
+  "sympy__sympy-21171": {
+    "instance_id": "sympy__sympy-21171",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_latex.py"
+  },
+  "sympy__sympy-21379": {
+    "instance_id": "sympy__sympy-21379",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_arit.py"
+  },
+  "sympy__sympy-21612": {
+    "instance_id": "sympy__sympy-21612",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/printing/tests/test_str.py"
+  },
+  "sympy__sympy-21614": {
+    "instance_id": "sympy__sympy-21614",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/core/tests/test_kind.py"
+  },
+  "sympy__sympy-21627": {
+    "instance_id": "sympy__sympy-21627",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/functions/elementary/tests/test_complexes.py"
+  },
+  "sympy__sympy-21847": {
+    "instance_id": "sympy__sympy-21847",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/polys/tests/test_monomials.py"
+  },
+  "sympy__sympy-22005": {
+    "instance_id": "sympy__sympy-22005",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/solvers/tests/test_polysys.py"
+  },
+  "sympy__sympy-22714": {
+    "instance_id": "sympy__sympy-22714",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/geometry/tests/test_point.py"
+  },
+  "sympy__sympy-22840": {
+    "instance_id": "sympy__sympy-22840",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/simplify/tests/test_cse.py sympy/utilities/tests/test_codegen.py"
+  },
+  "sympy__sympy-23117": {
+    "instance_id": "sympy__sympy-23117",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/tensor/array/tests/test_ndim_array.py"
+  },
+  "sympy__sympy-23191": {
+    "instance_id": "sympy__sympy-23191",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/vector/tests/test_printing.py"
+  },
+  "sympy__sympy-23262": {
+    "instance_id": "sympy__sympy-23262",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/utilities/tests/test_lambdify.py"
+  },
+  "sympy__sympy-24066": {
+    "instance_id": "sympy__sympy-24066",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/physics/units/tests/test_quantities.py"
+  },
+  "sympy__sympy-24102": {
+    "instance_id": "sympy__sympy-24102",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/parsing/tests/test_mathematica.py sympy/testing/quality_unicode.py"
+  },
+  "sympy__sympy-24152": {
+    "instance_id": "sympy__sympy-24152",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/physics/quantum/tests/test_tensorproduct.py"
+  },
+  "sympy__sympy-24213": {
+    "instance_id": "sympy__sympy-24213",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.c795f4b88616b8462021ed:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/physics/units/tests/test_quantities.py"
+  },
+  "sympy__sympy-24909": {
+    "instance_id": "sympy__sympy-24909",
+    "test_cmd": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose",
+    "env_image_key": "sweb.env.arm64.0d80c7dec81ee2f2f513e2:latest",
+    "install_cmd": "source /opt/miniconda3/bin/activate && conda activate testbed && echo \"Current environment: $CONDA_DEFAULT_ENV\" && python -m pip install -e .",
+    "test_cmd_with_directives": "PYTHONWARNINGS='ignore::UserWarning,ignore::SyntaxWarning' bin/test -C --verbose sympy/physics/units/tests/test_prefixes.py"
+  }
+}

@@ -548,12 +548,13 @@ def main(
                         result[prop] = getattr(obj, prop)
 
                     result["install_cmd"] = " && ".join(obj.repo_script_list[5::])
+                    result["test_cmd_with_directives"] = obj.eval_script_list[-2]
                     return result
                 
                 return super().default(obj)
         
         indexed_test_specs = {test.instance_id: test for test in test_specs}
-        with open('test_specs.json', 'w') as f:
+        with open('swe_bench_test_specs.json', 'w') as f:
             json.dump(indexed_test_specs, f, cls=DataclassEncoder, indent=2)
         return
         # build environment images + run instances
