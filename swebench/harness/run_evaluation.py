@@ -551,9 +551,10 @@ def main(
                     return result
                 
                 return super().default(obj)
-            
+        
+        indexed_test_specs = {test.instance_id: test for test in test_specs}
         with open('test_specs.json', 'w') as f:
-            json.dump(test_specs, f, cls=DataclassEncoder, indent=2)
+            json.dump(indexed_test_specs, f, cls=DataclassEncoder, indent=2)
         return
         # build environment images + run instances
         build_env_images(client, dataset, force_rebuild, max_workers)
