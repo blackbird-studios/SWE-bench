@@ -530,11 +530,11 @@ def main(
     else:
         # build environment images + run instances
         build_env_images(client, dataset, force_rebuild, max_workers)
-        run_instances(predictions, dataset, cache_level, clean, force_rebuild, max_workers, run_id, timeout)
+        # run_instances(predictions, dataset, cache_level, clean, force_rebuild, max_workers, run_id, timeout)
 
     # clean images + make final report
-    clean_images(client, existing_images, cache_level, clean)
-    make_run_report(predictions, full_dataset, client, run_id)
+    # clean_images(client, existing_images, cache_level, clean)
+    # make_run_report(predictions, full_dataset, client, run_id)
 
 
 if __name__ == "__main__":
